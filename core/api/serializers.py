@@ -6,3 +6,6 @@ class PontoTuristicoSerializer(serializers.ModelSerializer):
     class Meta:
         model = PontoTuristico
         fields = ("id", "nome", "descricao")
+
+    
+    #
