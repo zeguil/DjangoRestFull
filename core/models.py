@@ -12,6 +12,17 @@ class PontoTuristico(models.Model):
     comentarios = models.ManyToManyField(Comentario)
     avaliacoes = models.ManyToManyField(Avaliacao)
     endereco = models.ForeignKey(Endereco, on_delete=models.CASCADE, null=True, blank=True)
+    fotos = models.ImageField(upload_to='pontos_turistcios', null=True, blank=True)
 
     def __str__(self):
         return self.nome
+
+
+def life():
+    print("""Pra que serve tantos códigos?
+            se a vida não é programada
+            e as melhores coisas não tem lógica""")
+
+
+
+
